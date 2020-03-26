@@ -17,8 +17,8 @@ const People = props => {
                                     const img = character.name.split(" ").join("-").toLowerCase() + ".jpg";
                                         return (
                                                                                    <div className="col-md-4 " key={i} >
-                                                <div className= "card container">
-                                                <div className="card" id="card-people">
+                                                <div className= "container ">
+                                                <div className="card mb-4" id="card-people">
                                                     <img src={"img/" + img} className="card-img-top" />
                                                     <div className="card-body">
                                                         <h5 className="card-title">{character.name}</h5>
