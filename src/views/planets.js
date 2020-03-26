@@ -10,21 +10,25 @@ const Planets = props => {
         <>
             <div className="container">
                 <div className="row">
-                    <div className="col">
-                        <h1>Planets</h1>
-                    </div>
                     <div className="row">
                         {
                             !!store.planets ?
                                 store.planets.results.map((planet, i) => {
+                                    const img = planet.name.split(" ").join("-").toLowerCase()+".jpg";
                                     return (
-                                        <div className="col-md-4" key={i} >
-                                            <div className="card" >
-                                                <img src="http://placehold.it/400x200" className="card-img-top" alt="..." />
-                                                <div className="card-body">
-                                                    <h5 className="card-title">Card title</h5>
-                                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <div className="card mb-3" key={i} id="card-planets" >
+                                            <div className="row no-gutters">
+                                                <div className="col-md-4">
+                                                    <img src={"img/"+img} className="card-img" alt="..." />
+                                                </div>
+                                                <div className="col-md-8">
+                                                    <div className="card-body">
+                                                        <h5 className="card-title">{planet.name}</h5>
+                                                        <p className="card-text">Diameter: {planet.diameter}</p>
+                                                        <p className="card-text">Orbital Period: {planet.orbital_period}</p>
+                                                        <p className="card-text">Population: {planet.population}</p>
+                                                        <p className="card-text">Terrain: {planet.terrain}</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -47,3 +51,6 @@ const Planets = props => {
 
 
 export default Planets;
+
+
+

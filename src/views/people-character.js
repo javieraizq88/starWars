@@ -22,7 +22,7 @@ const People = props => {
                                                 <div className="card-body">
                                                     <h5 className="card-title">{character.name}</h5>
                                                     <p className="card-text">Eye Color = {character.eye_color} </p>
-                                                    <Link to="/:character" class="btn btn-primary">More</Link>
+                                                    <Link to="/people" class="btn btn-primary">Back to character</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -44,3 +44,5 @@ const People = props => {
 }
 
 export default People;
+
+

@@ -1,14 +1,51 @@
 body{
-    /* background-color: black;
-    color: white; */
+    background-color: black;
+    color: white;  
 }
 
-
 .titulo{
-    /* background-color: black;
-    color: white; */
+    background-color: black;
+    color: white; 
     text-align: center;
 }
 
+#card-planets{
+    background-color: rgb(65, 61, 61);
+}
 
+#card-people{
+    background-color: rgb(65, 61, 61);
+}
 
+.card-vehiculos { 
+    width: 100%;
+    height: 100%;
+    background-color: rgb(65, 61, 61);
+    color: white;
+}
+.card .card-img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    border: 1px solid #ffffff00;
+    object-fit: cover;
+    background-color: rgb(65, 61, 61);
+}
+
+.card .card-img-top {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    border: 1px solid #ffffff00;
+    object-fit: cover;
+    background-color: rgb(65, 61, 61);
+}
+
+#imagen-vehicles {
+    width: 350px;
+    height: 350px;
+    border-radius: 8px;
+    border: 1px solid #ffffff00;
+    object-fit: cover;
+    background-color: rgb(65, 61, 61);
+}

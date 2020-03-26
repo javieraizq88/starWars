@@ -7,6 +7,8 @@ import Vehicles from './views/vehicles';
 import Planets from './views/planets';
 import Titulo from './components/titulo';
 import injectContext from './components/store/appContext';
+import Home from './views/home';
+import PeopleCharacter from './views/people-character';
 
 
 const App = props => {
@@ -17,9 +19,11 @@ const App = props => {
         <Titulo />
         <Navbar />
         <Switch>
-          <Route exact path="https://swapi.co/api/" component={People} />
-          <Route exact path="https://swapi.co/api/" component={Planets} />
-          <Route exact path="https://swapi.co/api/" component={Vehicles} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/people" component={People} />
+          <Route exact path="/people/:character" component={PeopleCharacter} />
+          <Route exact path="/planets" component={Planets} />
+          <Route exact path="/vehicles" component={Vehicles} />
         </Switch>
       </BrowserRouter>
     </>
