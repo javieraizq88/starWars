@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Context } from "../components/store/appContext";
+import { Link } from "react-router-dom";
 
 const Planets = props => {
     const { store, actions } = useContext(Context);
@@ -28,6 +29,7 @@ const Planets = props => {
                                                         <p className="card-text">Orbital Period: {planet.orbital_period}</p>
                                                         <p className="card-text">Population: {planet.population}</p>
                                                         <p className="card-text">Terrain: {planet.terrain}</p>
+                                                        <Link to={"/planets/" + planet.name}  class="btn btn-primary">More</Link>
                                                     </div>
                                                 </div>
                                             </div>

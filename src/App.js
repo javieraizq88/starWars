@@ -9,7 +9,8 @@ import Titulo from './components/titulo';
 import injectContext from './components/store/appContext';
 import Home from './views/home';
 import PeopleCharacter from './views/people-character';
-
+import VehiclesOne from './views/vehicles-one';
+import PlanetsPlanet from './views/planets-planet';
 
 const App = props => {
 
@@ -20,8 +21,10 @@ const App = props => {
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/people" component={People} />
+          <Route exact path="/vehicles/:vehicle" component={VehiclesOne} />
           <Route exact path="/people/:character" component={PeopleCharacter} />
+          <Route exact path="/planets/:planet" component={PlanetsPlanet} />
+          <Route exact path="/people" component={People} />
           <Route exact path="/planets" component={Planets} />
           <Route exact path="/vehicles" component={Vehicles} />
         </Switch>

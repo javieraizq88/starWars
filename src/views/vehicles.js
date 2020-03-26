@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Context } from "../components/store/appContext";
+import { Link } from "react-router-dom";
 
 
 const Vehicles = props => {
@@ -15,15 +16,14 @@ const Vehicles = props => {
                         {
                             !!store.vehicles ?
                                 store.vehicles.results.map((vehicle, i) => {
-                                    const img = vehicle.name.split(" ").join("-").toLowerCase() + ".jpg";
+                                    const img = vehicle.name.replace("/", "-").split(" ").join("-").toLowerCase() + ".jpg";
                                     return (
                                         <div className="col-mb-4" key={i} >
                                             <div className="card-vehic">
                                                 <img src={"img/" + img} className="card-img-top" id="imagen-vehicles" />
                                                 <div className="card-body">
                                                     <h5 className="card-title">{vehicle.name} </h5>
-                                                    <p className="card-text">Model : {vehicle.model} </p>
-                                                   
+                                                    <Link to={"/vehicles/" + vehicle.name}  class="btn btn-primary">More</Link>
                                                 </div>
                                             </div>
                                         </div>
