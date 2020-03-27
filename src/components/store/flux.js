@@ -3,10 +3,30 @@ const getState = ({ getStore, getAction, setStore }) => {
         store: {
             people: null,
             planets: null,
-            vehicles: null
+            vehicles: null,
+            starships: null
         },
 
         actions: {
+            getStarships: url => {
+                const store = getStore ()
+                fetch(url, {
+                    method: "GET",
+                    headers: {
+                        "Content-Type": "application/json"
+                    }
+                }) // por default es GET
+                .then(resp => resp.json())
+                .then(data => {
+                    setStore({
+                        starships: {...data}
+                    });
+                }).catch(error => {
+                    console.log(error)
+                })
+            },
+            
+
             getPeople: url => {
                 fetch(url, {
                     method: "GET",

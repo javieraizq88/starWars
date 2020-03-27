@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Context } from "../components/store/appContext";
-import { Link } from "react-router-dom";
+import { Link, StaticRouter } from "react-router-dom";
 
 const Planets = props => {
     const { store, actions } = useContext(Context);
@@ -20,10 +20,10 @@ const Planets = props => {
                                         <div className="card bg-dark text-white" key={i} id="card-planets" >
                                             <img src={"img/" + img} className="card-img" alt="..." />
                                             <div className="row no-gutters">
-                                            &nbsp;<h5 className="card-title">{planet.name}</h5> 
+                                                &nbsp;<h5 className="card-title">{planet.name}</h5>
                                                 <div className="container ">
-                                                <p><Link to={"/planets/" + planet.name} className=" btn btn-danger">More...</Link></p>
-                                            </div>
+                                                    <p><Link to={"/planets/" + planet.name} className=" btn btn-danger">More...</Link></p>
+                                                </div>
                                             </div>
                                         </div>
                                     )
@@ -37,6 +37,41 @@ const Planets = props => {
                                 )
                         }
                     </div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-md-12 d-flex justify-content-between">
+                    {
+                        !!store.planets &&
+                        store.planets.previous !== null ?
+                            (
+                                <button className="btn btn-primary btn-md"
+                                    onClick={() => actions.getPlanets(store.planets.previous)}>
+                                    Previous
+                                </button>
+                            ) :( 
+                                <button className="btn btn-primary btn-md disabled"
+                                    onClick={() => actions.getPlanets(store.planets.previous)}>
+                                    Previous
+                                </button>
+                            )
+                    }
+                    {
+                        !!store.planets &&
+                        store.planets.previous !== null ?
+                            (
+                                <button className="btn btn-primary btn-md"
+                                    onClick={() => actions.getPlanets(store.planets.next)}>
+                                    Next
+                                </button>
+                            ) :( 
+                                <button className="btn btn-primary btn-md disabled"
+                                    onClick={() => actions.getPlanets(store.planets.next)}>
+                                    Next
+                                </button>
+                            )
+                    }
+
                 </div>
             </div>
         </>

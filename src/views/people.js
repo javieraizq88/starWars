@@ -15,21 +15,21 @@ const People = props => {
                             !!store.people ?
                                 store.people.results.map((character, i) => {
                                     const img = character.name.split(" ").join("-").toLowerCase() + ".jpg";
-                                        return (
-                                                                                   <div className="col-md-4 " key={i} >
-                                                <div className= "container ">
+                                    return (
+                                        <div className="col-md-4 " key={i} >
+                                            <div className="container ">
                                                 <div className="card mb-4" id="card-people">
                                                     <img src={"img/" + img} className="card-img-top" />
                                                     <div className="card-body">
                                                         <h5 className="card-title">{character.name}</h5>
-                                                        <Link to={"/people/" + character.name}  class="btn btn-info ">More</Link>
+                                                        <Link to={"/people/" + character.name} class="btn btn-info ">More</Link>
                                                     </div>
                                                 </div>
                                             </div>
-                                            </div>
-                                            
-                                        )
-                                    
+                                        </div>
+
+                                    )
+
                                 })
                                 : (
                                     <div className="col-md-12 text-center">
