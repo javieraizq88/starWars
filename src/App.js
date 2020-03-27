@@ -11,6 +11,9 @@ import Home from './views/home';
 import PeopleCharacter from './views/people-character';
 import VehiclesOne from './views/vehicles-one';
 import PlanetsPlanet from './views/planets-planet';
+import Films from './views/films';
+import Starships from './views/starships';
+import Filmsfilm from './views/films-film';
 
 const App = props => {
 
@@ -24,7 +27,10 @@ const App = props => {
           <Route exact path="/vehicles/:vehicle" component={VehiclesOne} />
           <Route exact path="/people/:character" component={PeopleCharacter} />
           <Route exact path="/planets/:planet" component={PlanetsPlanet} />
+          <Route exact path="/films/:film" component={Filmsfilm} />
           <Route exact path="/people" component={People} />
+          <Route exact path="/starships" component={Starships} />
+          <Route exact path="/films" component={Films} />
           <Route exact path="/planets" component={Planets} />
           <Route exact path="/vehicles" component={Vehicles} />
           <Route render={() => <h1>Not Found</h1>} />

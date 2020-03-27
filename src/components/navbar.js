@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 const Navbar = props => {
     return (
         <>
@@ -15,10 +14,19 @@ const Navbar = props => {
                             <Link className="nav-link" to="/people">People</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/planets">Planets</Link>
+                            <Link className="nav-link" to="/films">Films</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/starships">Starships</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/vehicles">Vehicles</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/species">Species</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/planets">Planets</Link>
                         </li>
                     </ul>
                 </div>

@@ -1,11 +1,10 @@
 import React, { useContext } from "react";
 import { Context } from "../components/store/appContext";
-import { Link } from "react-router-dom";
+import { Link, StaticRouter } from "react-router-dom";
 
-const People = props => {
+const Starships = props => {
     const { store, actions } = useContext(Context);
-    const { people } = store;
-    console.log(store.people);
+    const { starships } = store;
 
     return (
         <>
@@ -13,18 +12,17 @@ const People = props => {
                 <div className="row">
                     <div className="row">
                         {
-                            !!store.people &&
-                            store.people.results.length > 0 ?
-                                store.people.results.map((character, i) => {
-                                    const img = character.name.split(" ").join("-").toLowerCase() + ".jpg";
+                            !!store.starships ?
+                                store.starships.results.map((starship, i) => {
+                                    const img = starship.name.split(" ").join("-").toLowerCase() + ".jpg";
                                     return (
 
-                                        <div className="card bg-dark text-white" key={i} >
+                                        <div className="card bg-dark text-white" key={i} id="card-starships" >
                                             <img src={"img/" + img} className="card-img" alt="..." />
                                             <div className="row no-gutters">
-                                                &nbsp;<h5 className="card-title">{character.name}</h5>
+                                                &nbsp;<h5 className="card-title">{starship.name}</h5>
                                                 <div className="container ">
-                                                    <p><Link to={"/planets/" + character.name} className=" btn btn-danger">More...</Link></p>
+                                                    <p><Link to={"/starships/" + starship.name} className=" btn btn-danger">More...</Link></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -45,31 +43,31 @@ const People = props => {
             <div className="row">
                 <div className="col-md-12 d-flex justify-content-between">
                     {
-                        !!store.people &&
-                        store.people.previous !== null ?
+                        !!store.starships &&
+                        store.starships.previous !== null ?
                             (
                                 <button className="btn btn-primary btn-md"
-                                    onClick={() => actions.getPeople(store.people.previous)}>
+                                    onClick={() => actions.getstarships(store.starships.previous)}>
                                     Previous
                                 </button>
                             ) :( 
                                 <button className="btn btn-primary btn-md disabled"
-                                    onClick={() => actions.getPeople(store.people.previous)}>
+                                    onClick={() => actions.getstarships(store.starships.previous)}>
                                     Previous
                                 </button>
                             )
                     }
                     {
-                        !!store.people &&
-                        store.people.next !== null ?
+                        !!store.starships &&
+                        store.starships.next !== null ?
                             (
                                 <button className="btn btn-primary btn-md"
-                                    onClick={() => actions.getPeople(store.people.next)}>
+                                    onClick={() => actions.getstarships(store.starships.next)}>
                                     Next
                                 </button>
                             ) :( 
                                 <button className="btn btn-primary btn-md disabled"
-                                    onClick={() => actions.getPeople(store.people.next)}>
+                                    onClick={() => actions.getstarships(store.starships.next)}>
                                     Next
                                 </button>
                             )
@@ -81,4 +79,8 @@ const People = props => {
     )
 }
 
-export default People;
+
+export default Starships;
+
+
+

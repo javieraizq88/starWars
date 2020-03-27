@@ -59,22 +59,3 @@ const PeopleCharacter = props => {
 }
 
 export default PeopleCharacter;
-
-// Wilhuff Tarkin
-
-// Chewbacca
-
-// Han Solo
-
-// Greedo
-
-// Jabba Desilijic Tiure
-
-// Wedge Antilles
-
-// Jek Tono Porkins
-
-// Yoda
-
-// Palpatine
-

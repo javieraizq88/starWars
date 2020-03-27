@@ -15,14 +15,16 @@ const injectContext = PassedComponent => {
                     store: Object.assign(this.state.store, updateStore),
                     actions: { ...this.state.actions }
                 })
-
             })
         }
 
         componentDidMount() {
             this.state.actions.getPeople("https://swapi.co/api/people");
-            this.state.actions.getPlanets("https://swapi.co/api/planets");
+            this.state.actions.getFilms("https://swapi.co/api/films");
+            this.state.actions.getStarships("https://swapi.co/api/starships");
             this.state.actions.getVehicles("https://swapi.co/api/vehicles");
+            this.state.actions.getSpecies("https://swapi.co/api/species");
+            this.state.actions.getPlanets("https://swapi.co/api/planets");
         }
         render() {
             return (
