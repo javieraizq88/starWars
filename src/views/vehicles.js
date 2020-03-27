@@ -40,6 +40,43 @@ const Vehicles = props => {
                     </div>
                 </div>
             </div>
+
+            <div className="row">
+                <div className="col-md-12 d-flex justify-content-between">
+                    {
+                        !!store.vehicles &&
+                        store.vehicles.previous !== null ?
+                            (
+                                <button className="btn btn-primary btn-md"
+                                    onClick={() => actions.getVehicles(store.vehicles.previous)}>
+                                    Previous
+                                </button>
+                            ) :( 
+                                <button className="btn btn-primary btn-md disabled"
+                                    onClick={() => actions.getVehicles(store.vehicles.previous)}>
+                                    Previous
+                                </button>
+                            )
+                    }
+                    {
+                        !!store.vehicles &&
+                        store.vehicles.previous !== null ?
+                            (
+                                <button className="btn btn-primary btn-md"
+                                    onClick={() => actions.getVehicles(store.vehicles.next)}>
+                                    Next
+                                </button>
+                            ) :( 
+                                <button className="btn btn-primary btn-md disabled"
+                                    onClick={() => actions.getVehicles(store.vehicles.next)}>
+                                    Next
+                                </button>
+                            )
+                    }
+
+                </div>
+            </div>
+
         </>
     )
 
