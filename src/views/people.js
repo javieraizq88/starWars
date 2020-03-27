@@ -22,6 +22,7 @@ const People = props => {
                                                     <img src={"img/" + img} className="card-img-top" />
                                                     <div className="card-body">
                                                         <h5 className="card-title">{character.name}</h5>
+                                                        <p className= ""></p>
                                                         <Link to={"/people/" + character.name} class="btn btn-info ">More</Link>
                                                     </div>
                                                 </div>
@@ -82,3 +83,44 @@ const People = props => {
 }
 
 export default People;
+
+// Anakin Skywalker
+
+// Wilhuff Tarkin
+
+// Chewbacca
+
+// Han Solo
+
+// Greedo
+
+// Jabba Desilijic Tiure
+
+// Wedge Antilles
+
+// Jek Tono Porkins
+
+// Yoda
+
+// Palpatine
+
+// Boba Fett
+
+// IG-88
+
+// Bossk
+
+// Lando Calrissian
+
+// Lobot
+
+// Ackbar
+
+// Mon Mothma
+
+// Arvel Crynyd
+
+// Wicket Systri Warrick
+
+// Nien Nunb
+

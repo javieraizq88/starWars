@@ -27,7 +27,7 @@ const PeopleCharacter = props => {
                                                 <div className="card-md9" id="card-people">
                                                     <h5 className="card-title">{character.name}</h5>
                                                     <p>
-                                                       &nbsp; Birth Year : {character.birth_year} <br />
+                                                        &nbsp; Birth Year : {character.birth_year} <br />
                                                        &nbsp; Created : {character.created}<br />
                                                        &nbsp; Edited = {character.edited} <br />
                                                        &nbsp; Eye Color : {character.eye_color}<br />
@@ -59,3 +59,22 @@ const PeopleCharacter = props => {
 }
 
 export default PeopleCharacter;
+
+// Wilhuff Tarkin
+
+// Chewbacca
+
+// Han Solo
+
+// Greedo
+
+// Jabba Desilijic Tiure
+
+// Wedge Antilles
+
+// Jek Tono Porkins
+
+// Yoda
+
+// Palpatine
+
