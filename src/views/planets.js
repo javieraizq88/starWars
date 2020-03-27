@@ -39,7 +39,7 @@ const Planets = props => {
                     </div>
                 </div>
             </div>
-            
+
             <div className="row">
                 <div className="col-md-12 d-flex justify-content-between">
                     {
@@ -59,7 +59,7 @@ const Planets = props => {
                     }
                     {
                         !!store.planets &&
-                        store.planets.previous !== null ?
+                        store.planets.next !== null ?
                             (
                                 <button className="btn btn-primary btn-md"
                                     onClick={() => actions.getPlanets(store.planets.next)}>

@@ -60,7 +60,7 @@ const Vehicles = props => {
                     }
                     {
                         !!store.vehicles &&
-                        store.vehicles.previous !== null ?
+                        store.vehicles.next !== null ?
                             (
                                 <button className="btn btn-primary btn-md"
                                     onClick={() => actions.getVehicles(store.vehicles.next)}>

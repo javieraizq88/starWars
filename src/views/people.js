@@ -62,7 +62,7 @@ const People = props => {
                     }
                     {
                         !!store.people &&
-                        store.people.previous !== null ?
+                        store.people.next !== null ?
                             (
                                 <button className="btn btn-primary btn-md"
                                     onClick={() => actions.getPeople(store.people.next)}>
