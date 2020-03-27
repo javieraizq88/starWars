@@ -43,6 +43,40 @@ const People = props => {
                     </div>
                 </div>
             </div>
+            <div className="row">
+                <div className="col-md-12 d-flex justify-content-between">
+                    {
+                        !!store.people &&
+                        store.people.previous !== null ?
+                            (
+                                <button className="btn btn-primary btn-md"
+                                    onClick={() => actions.getPeople(store.people.previous)}>
+                                    Previous
+                                </button>
+                            ) :( 
+                                <button className="btn btn-primary btn-md disabled"
+                                    onClick={() => actions.getPeople(store.people.previous)}>
+                                    Previous
+                                </button>
+                            )
+                    }
+                    {
+                        !!store.people &&
+                        store.people.previous !== null ?
+                            (
+                                <button className="btn btn-primary btn-md"
+                                    onClick={() => actions.getPeople(store.people.next)}>
+                                    Next
+                                </button>
+                            ) :( 
+                                <button className="btn btn-primary btn-md disabled"
+                                    onClick={() => actions.getPeople(store.people.next)}>
+                                    Next
+                                </button>
+                            )
+                    }
+                                    </div>
+            </div>
         </>
     )
 }
