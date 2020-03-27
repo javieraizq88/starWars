@@ -72,7 +72,6 @@ const Starships = props => {
                                 </button>
                             )
                     }
-
                 </div>
             </div>
         </>
@@ -81,6 +80,3 @@ const Starships = props => {
 
 
 export default Starships;
-
-
-
