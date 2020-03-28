@@ -53,3 +53,7 @@ body{
     object-fit: cover;
     background-color: rgb(65, 61, 61);
 }
+
+.card-detalle {
+    background-color: rgb(65, 61, 61);
+}

@@ -12,8 +12,12 @@ import PeopleCharacter from './views/people-character';
 import VehiclesOne from './views/vehicles-one';
 import PlanetsPlanet from './views/planets-planet';
 import Films from './views/films';
+import FilmsFilm from './views/films-film';
 import Starships from './views/starships';
-import Filmsfilm from './views/films-film';
+import Starshipsstarship from './views/starships-starship';
+import Species from './views/species';
+import SpeciesSpecie from './views/species-specie';
+
 
 const App = props => {
 
@@ -25,12 +29,15 @@ const App = props => {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/vehicles/:vehicle" component={VehiclesOne} />
+          <Route exact path="/films/:film" component={FilmsFilm} />
+          <Route exact path="/starships/:starship" component={Starshipsstarship} />
           <Route exact path="/people/:character" component={PeopleCharacter} />
           <Route exact path="/planets/:planet" component={PlanetsPlanet} />
-          <Route exact path="/films/:film" component={Filmsfilm} />
-          <Route exact path="/people" component={People} />
+          <Route exact path="/species/:specie" component={SpeciesSpecie} />
           <Route exact path="/starships" component={Starships} />
+          <Route exact path="/people" component={People} />
           <Route exact path="/films" component={Films} />
+          <Route exact path="/species" component={Species} />
           <Route exact path="/planets" component={Planets} />
           <Route exact path="/vehicles" component={Vehicles} />
           <Route render={() => <h1>Not Found</h1>} />

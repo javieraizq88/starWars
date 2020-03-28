@@ -2,10 +2,10 @@ import React, { useContext } from "react";
 import { Context } from "../components/store/appContext";
 import { Link } from "react-router-dom";
 
-const PeopleCharacter = props => {
+const Starshipsstarship = props => {
     const { store, actions } = useContext(Context);
-    const { people } = store;
-    const nombreCharacter = props.match.params.character; //llamo los paranmetros de people
+    const { starships } = store;
+    const nombreStarship = props.match.params.starship; //llamo los paranmetros de people
 
     return (
         <>
@@ -13,17 +13,20 @@ const PeopleCharacter = props => {
                 <div className="row">
                     <div className="row">
                         {
-                            !!store.people  ?
-                                store.people.results.map((character, i) => {
-                                    if (JSON.stringify(character.name) === JSON.stringify(nombreCharacter)) {
-                                    const img = character.name.split(" ").join("-").toLowerCase() + ".jpg";
+                            !!store.starships &&
+                            store.starships.results.length > 0 ?
+                                store.starships.results.map((starship, i) => {
+                                    if (JSON.stringify(starship.name) === JSON.stringify(nombreStarship)) {
+
+                                    const img = starship.name.split(" ").join("-").toLowerCase() + ".jpg";
                                     return (
+
                                         <div className="card bg-dark text-white" key={i} >
-                                            <img src={"http://localhost:3000/img/" + img} className="card-img" alt="..." />
+                                            <img src={"img/" + img} className="card-img" alt="..." />
                                             <div className="row no-gutters">
-                                                &nbsp;<h5 className="card-title">{character.name}</h5>
+                                                &nbsp;<h5 className="card-title">{starship.name}</h5>
                                                 <div className="container ">
-                                                    <p><Link to={"/people"} className=" btn btn-danger">Back to People</Link></p>
+                                                    <p><Link to={"/starships"} className=" btn btn-danger">Back to starships</Link></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -45,4 +48,4 @@ const PeopleCharacter = props => {
     )
 }
 
-export default PeopleCharacter;
+export default Starshipsstarship;

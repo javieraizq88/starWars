@@ -24,7 +24,7 @@ const People = props => {
                                             <div className="row no-gutters">
                                                 &nbsp;<h5 className="card-title">{character.name}</h5>
                                                 <div className="container ">
-                                                    <p><Link to={"/planets/" + character.name} className=" btn btn-danger">More...</Link></p>
+                                                    <p><Link to={"/people/" + character.name} className=" btn btn-danger">More...</Link></p>
                                                 </div>
                                             </div>
                                         </div>

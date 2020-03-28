@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Context } from "../components/store/appContext";
-import { Link, StaticRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Starships = props => {
     const { store, actions } = useContext(Context);
@@ -12,12 +12,13 @@ const Starships = props => {
                 <div className="row">
                     <div className="row">
                         {
-                            !!store.starships ?
+                            !!store.starships &&
+                            store.starships.results.length > 0 ?
                                 store.starships.results.map((starship, i) => {
                                     const img = starship.name.split(" ").join("-").toLowerCase() + ".jpg";
                                     return (
 
-                                        <div className="card bg-dark text-white" key={i} id="card-starships" >
+                                        <div className="card bg-dark text-white" key={i} >
                                             <img src={"img/" + img} className="card-img" alt="..." />
                                             <div className="row no-gutters">
                                                 &nbsp;<h5 className="card-title">{starship.name}</h5>
@@ -47,12 +48,12 @@ const Starships = props => {
                         store.starships.previous !== null ?
                             (
                                 <button className="btn btn-primary btn-md"
-                                    onClick={() => actions.getstarships(store.starships.previous)}>
+                                    onClick={() => actions.getStarships(store.starships.previous)}>
                                     Previous
                                 </button>
                             ) :( 
                                 <button className="btn btn-primary btn-md disabled"
-                                    onClick={() => actions.getstarships(store.starships.previous)}>
+                                    onClick={() => actions.getStarships(store.starships.previous)}>
                                     Previous
                                 </button>
                             )
@@ -62,21 +63,21 @@ const Starships = props => {
                         store.starships.next !== null ?
                             (
                                 <button className="btn btn-primary btn-md"
-                                    onClick={() => actions.getstarships(store.starships.next)}>
+                                    onClick={() => actions.getStarships(store.starships.next)}>
                                     Next
                                 </button>
                             ) :( 
                                 <button className="btn btn-primary btn-md disabled"
-                                    onClick={() => actions.getstarships(store.starships.next)}>
+                                    onClick={() => actions.getStarships(store.starships.next)}>
                                     Next
                                 </button>
                             )
                     }
+
                 </div>
             </div>
         </>
     )
 }
-
 
 export default Starships;

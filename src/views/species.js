@@ -2,8 +2,9 @@ import React, { useContext } from "react";
 import { Context } from "../components/store/appContext";
 import { Link } from "react-router-dom";
 
-const Films = props => {
+const Species = props => {
     const { store, actions } = useContext(Context);
+    const { species } = store;
 
     return (
         <>
@@ -11,18 +12,18 @@ const Films = props => {
                 <div className="row">
                     <div className="row">
                         {
-                            !!store.films &&
-                            store.films.results.length > 0 ?
-                                store.films.results.map((film, i) => {
-                                    const img = film.title.split(" ").join("-").toLowerCase() + ".jpg";
+                            !!store.species &&
+                            store.species.results.length > 0 ?
+                                store.species.results.map((specie, i) => {
+                                    const img = specie.name.split(" ").join("-").toLowerCase() + ".jpg";
                                     return (
 
                                         <div className="card bg-dark text-white" key={i} >
                                             <img src={"img/" + img} className="card-img" alt="..." />
                                             <div className="row no-gutters">
-                                                &nbsp;<h5 className="card-title">{film.title}</h5>
+                                                &nbsp;<h5 className="card-title">{specie.name}</h5>
                                                 <div className="container ">
-                                                    <p><Link to={"/films/" + film.title} className=" btn btn-danger">More...</Link></p>
+                                                    <p><Link to={"/species/" + specie.name} className=" btn btn-danger">More...</Link></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -43,31 +44,31 @@ const Films = props => {
             <div className="row">
                 <div className="col-md-12 d-flex justify-content-between">
                     {
-                        !!store.films &&
-                        store.films.previous !== null ?
+                        !!store.species &&
+                        store.species.previous !== null ?
                             (
                                 <button className="btn btn-primary btn-md"
-                                    onClick={() => actions.getFilms(store.films.previous)}>
+                                    onClick={() => actions.getSpecies(store.species.previous)}>
                                     Previous
                                 </button>
                             ) :( 
                                 <button className="btn btn-primary btn-md disabled"
-                                    onClick={() => actions.getFilms(store.films.previous)}>
+                                    onClick={() => actions.getSpecies(store.species.previous)}>
                                     Previous
                                 </button>
                             )
                     }
                     {
-                        !!store.films &&
-                        store.films.next !== null ?
+                        !!store.species &&
+                        store.species.next !== null ?
                             (
                                 <button className="btn btn-primary btn-md"
-                                    onClick={() => actions.getFilms(store.films.next)}>
+                                    onClick={() => actions.getSpecies(store.species.next)}>
                                     Next
                                 </button>
                             ) :( 
                                 <button className="btn btn-primary btn-md disabled"
-                                    onClick={() => actions.getFilms(store.films.next)}>
+                                    onClick={() => actions.getSpecies(store.species.next)}>
                                     Next
                                 </button>
                             )
@@ -79,4 +80,4 @@ const Films = props => {
     )
 }
 
-export default Films;
+export default Species;
