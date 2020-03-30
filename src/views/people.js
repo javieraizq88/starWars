@@ -14,20 +14,21 @@ const People = props => {
                     <div className="row">
                         {
                             !!store.people &&
-                            store.people.results.length > 0 ?
+                                store.people.results.length > 0 ?
                                 store.people.results.map((character, i) => {
                                     const img = character.name.split(" ").join("-").toLowerCase() + ".jpg";
                                     return (
 
-                                        <div className="card bg-dark text-white" key={i} >
-                                            <img src={"img/" + img} className="card-img" alt="..." />
-                                            <div className="row no-gutters">
-                                                &nbsp;<h5 className="card-title">{character.name}</h5>
-                                                <div className="container ">
-                                                    <p><Link to={"/people/" + character.name} className=" btn btn-danger">More...</Link></p>
-                                                </div>
+                                        <div className="card mt-3 p-1 mx-3 bg-dark" key={i} id="card-general">
+                                            <div className="">
+                                                    <img src={"img/" + img} className="card-img-top" alt="..." />
+                                                    <div className="card-body">
+                                                        <h5 className="card-title">{character.name}</h5>
+                                                        <p><Link to={"/people/" + character.name} className=" btn btn-danger">More...</Link></p>
+                                                    </div>
                                             </div>
                                         </div>
+
                                     )
                                 })
                                 : (
@@ -46,13 +47,13 @@ const People = props => {
                 <div className="col-md-12 d-flex justify-content-between">
                     {
                         !!store.people &&
-                        store.people.previous !== null ?
+                            store.people.previous !== null ?
                             (
                                 <button className="btn btn-primary btn-md"
                                     onClick={() => actions.getPeople(store.people.previous)}>
                                     Previous
                                 </button>
-                            ) :( 
+                            ) : (
                                 <button className="btn btn-primary btn-md disabled"
                                     onClick={() => actions.getPeople(store.people.previous)}>
                                     Previous
@@ -61,13 +62,13 @@ const People = props => {
                     }
                     {
                         !!store.people &&
-                        store.people.next !== null ?
+                            store.people.next !== null ?
                             (
                                 <button className="btn btn-primary btn-md"
                                     onClick={() => actions.getPeople(store.people.next)}>
                                     Next
                                 </button>
-                            ) :( 
+                            ) : (
                                 <button className="btn btn-primary btn-md disabled"
                                     onClick={() => actions.getPeople(store.people.next)}>
                                     Next

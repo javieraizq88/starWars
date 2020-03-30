@@ -17,6 +17,20 @@ body{
     position: relative;
 }
 
+#card-general{
+ width: 200px;
+ height: 350px;
+}
+
+#card-general img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
 /*
 #card-planets{
     background-color: rgb(65, 61, 61);
