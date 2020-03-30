@@ -17,16 +17,15 @@ const Starships = props => {
                                 store.starships.results.map((starship, i) => {
                                     const img = starship.name.split(" ").join("-").toLowerCase() + ".jpg";
                                     return (
-
-                                        <div className="card bg-dark text-white" key={i} >
-                                            <img src={"img/" + img} className="card-img" alt="..." />
-                                            <div className="row no-gutters">
-                                                &nbsp;<h5 className="card-title">{starship.name}</h5>
-                                                <div className="container ">
-                                                    <p><Link to={"/starships/" + starship.name} className=" btn btn-danger">More...</Link></p>
-                                                </div>
+                                        <div className="card mt-3 p-1 mx-3 bg-dark" key={i} id="card-general">
+                                        <div className="">
+                                            <img src={"img/" + img} className="card-img-top" alt="..." />
+                                            <div className="card-body">
+                                                <h5 className="card-title">{starship.name}</h5>
+                                                <p><Link to={"/people/" + starship.name} className=" btn btn-danger">More...</Link></p>
                                             </div>
                                         </div>
+                                    </div>
                                     )
                                 })
                                 : (
