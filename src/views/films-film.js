@@ -10,7 +10,7 @@ const FilmsFilm = props => {
     return (
         <>
             <div className="container">
-                <div className="row">
+                <div className="card-growp">
                     <div className="row">
                         {
                             !!store.films ?
@@ -20,24 +20,25 @@ const FilmsFilm = props => {
                                         //para linkear la imagen de cada film, hay q cambiar "img/" por URL
                                         //el boton vuelve a films por eso no tiene el "/" final
                                         return (
-                                            <div className="card-detalle mt-3 mb-3" key={i}>
+                                            <div className="card mt-3" key={i} id="card-individual">
                                                 <div className="row no-gutters">
                                                     <div className="col-md-4">
-                                                        <img src={"http://localhost:3000/img/" + img} className="card-img" />
+                                                        <img src={"http://localhost:3000/img/" + img} id= "imagen-individual"/>
                                                     </div>
                                                     <div className="col-md-8">
-                                                        <h5 className="card-title">{film.title}</h5>
-                                                        <p>
-                                                            &nbsp; Created : {film.created}<br />
+                                                        <div className="card-body">
+                                                            <h5 className="card-title">{film.title}</h5>
+                                                            <p>
+                                                                &nbsp; Created : {film.created}<br />
                                                             &nbsp; Director : {film.director}<br />
                                                             &nbsp; Episode number : {film.episode_id}<br />
                                                             &nbsp; Ppening crawl : {film.opening_crawl}<br />
-                                                        </p>
-                                                        <Link to="/films" className="btn btn-primary">Back to films</Link>
+                                                            </p>
+                                                            <Link to="/films" className="btn btn-primary">Back to films</Link>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-
                                         )
                                     }
                                 })

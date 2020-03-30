@@ -20,16 +20,27 @@ const Starshipsstarship = props => {
 
                                     const img = starship.name.split(" ").join("-").toLowerCase() + ".jpg";
                                     return (
-
-                                        <div className="card bg-dark text-white" key={i} >
-                                            <img src={"img/" + img} className="card-img" alt="..." />
-                                            <div className="row no-gutters">
-                                                &nbsp;<h5 className="card-title">{starship.name}</h5>
-                                                <div className="container ">
-                                                    <p><Link to={"/starships"} className=" btn btn-danger">Back to starships</Link></p>
+                                        <div className="card mt-3" key={i} id="card-individual">
+                                        <div className="row no-gutters">
+                                            <div className="col-md-4">
+                                                <img src={"http://localhost:3000/img/" + img} id= "omagen-individual"/>
+                                            </div>
+                                            <div className="col-md-8">
+                                                <div className="card-body">
+                                                    <h5 className="card-title">{starship.name}</h5>
+                                                    <p>
+                                                    &nbsp; Cargo capacity : {starship.cargo_capacity}<br />
+                                                    &nbsp; Consumables : {starship.consumables}<br />
+                                                    &nbsp; Cost in credits : {starship.cost_in_credits}<br />
+                                                    &nbsp; Crew : {starship.crew}<br />
+                                                    &nbsp; Model : {starship.model}<br />
+                                                    &nbsp; Passengers : {starship.passengers}<br />
+                                                    </p>
+                                                    <Link to="/starships" className="btn btn-primary">Back to starships</Link>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
                                     )}
                                 })
                                 : (
@@ -43,7 +54,6 @@ const Starshipsstarship = props => {
                     </div>
                 </div>
             </div>
-
         </>
     )
 }

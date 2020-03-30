@@ -20,7 +20,7 @@ const PlanetsPlanet = props => {
                                         //para linkear la imagen de cada character, hay q cambiar "img/" por URL
                                         //el boton vuelve a people por eso no tiene el "/" final
                                     return (
-                                        <div className="card mb-3" key={i} id="card-planets" >
+                                        <div className="card mt-3 mb-3" key={i} id="card-planets" >
                                             <div className="row no-gutters">
                                                 <div className="col-md-4">
                                                     <img src={"http://localhost:3000/img/"+img} className="card-img" alt="..." />
