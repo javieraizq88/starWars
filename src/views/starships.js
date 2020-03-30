@@ -22,7 +22,7 @@ const Starships = props => {
                                             <img src={"img/" + img} className="card-img-top" alt="..." />
                                             <div className="card-body">
                                                 <h5 className="card-title">{starship.name}</h5>
-                                                <p><Link to={"/people/" + starship.name} className=" btn btn-danger">More...</Link></p>
+                                                <p><Link to={"/starships/" + starship.name} className=" btn btn-danger">More...</Link></p>
                                             </div>
                                         </div>
                                     </div>
