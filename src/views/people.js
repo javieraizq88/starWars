@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { Context } from "../components/store/appContext";
 import { Link } from "react-router-dom";
+import { Context } from "../components/store/appContext";
 
 const People = props => {
     const { store, actions } = useContext(Context);

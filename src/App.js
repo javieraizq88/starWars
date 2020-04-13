@@ -34,10 +34,10 @@ const App = props => {
           <Route exact path="/people/:character" component={PeopleCharacter} />
           <Route exact path="/planets/:planet" component={PlanetsPlanet} />
           <Route exact path="/species/:specie" component={SpeciesSpecie} />
+          <Route exact path="/species" component={Species} />
           <Route exact path="/starships" component={Starships} />
           <Route exact path="/people" component={People} />
           <Route exact path="/films" component={Films} />
-          <Route exact path="/species" component={Species} />
           <Route exact path="/planets" component={Planets} />
           <Route exact path="/vehicles" component={Vehicles} />
           <Route render={() => <h1>Not Found</h1>} />

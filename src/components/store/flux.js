@@ -16,7 +16,7 @@ const getState = ({ getStore, getAction, setStore }) => {
                     headers:{
                         "Content-Type": "application/json"
                     }
-                }) // por default es GET
+                })
                 .then(resp => resp.json())
                 .then(data => {
                     setStore({
@@ -32,7 +32,7 @@ const getState = ({ getStore, getAction, setStore }) => {
                     headers:{
                         "Content-Type": "application/json"
                     }
-                }) // por default es GET
+                })
                 .then(resp => resp.json())
                 .then(data => {
                     setStore({
@@ -48,7 +48,7 @@ const getState = ({ getStore, getAction, setStore }) => {
                     headers:{
                         "Content-Type": "application/json"
                     }
-                }) // por default es GET
+                }) 
                 .then(resp => resp.json())
                 .then(data => {
                     setStore({
