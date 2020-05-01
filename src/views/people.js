@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../components/store/appContext";
-
+/* RESPONSIVE */
 const People = props => {
     const { store, actions } = useContext(Context);
     const { people } = store;
@@ -19,8 +19,8 @@ const People = props => {
                                     const img = character.name.split(" ").join("-").toLowerCase() + ".jpg";
                                     return (
                                         <div className="card mt-3 p-1 mx-3 bg-dark" key={i} id="card-general">
-                                            <div className="">
-                                                <img src={"img/" + img} className="card-img-top" alt="..." />
+                                            <div className="" id="card-general">
+                                                <img src={"img/people/" + img} className="card-img-top" alt="..." />
                                                 <div className="card-body">
                                                     <h5 className="card-title">{character.name}</h5>
                                                     <p><Link to={"/people/" + character.name} className=" btn btn-danger">More...</Link></p>
@@ -30,7 +30,7 @@ const People = props => {
                                     )
                                 })
                                 : (
-                                    <div className="col-md-12 text-center">
+                                    <div className="col-md-12 col-xs-12 text-center">
                                         <div className="spinner-grow" role="status">
                                             <span className="sr-only">Loading...</span>
                                         </div>
@@ -42,12 +42,12 @@ const People = props => {
             </div>
 
             <div className="row">
-                <div className="col-md-12 d-flex justify-content-between">
+                <div className="col-md-12 col-xs-12 d-flex justify-content-between">
                     {
                         !!store.people &&
                             store.people.previous !== null ?
                             (
-                                <button className="btn btn-primary btn-md"
+                                <button className="btn btn-primary btn-md" 
                                     onClick={() => actions.getPeople(store.people.previous)}>
                                     Previous
                                 </button>

@@ -10,7 +10,7 @@ const VehiclesOne = props => {
 
     return (
         <>
-            <div className="container col-12">
+            <div className="container ">
                 <div className="row">
                     <div className="row">
                         {
@@ -22,23 +22,24 @@ const VehiclesOne = props => {
                                         //para linkear la imagen de cada character, hay q cambiar "img/" por URL
                                         //el boton vuelve a people por eso no tiene el "/" final
                                         return (
-                                            <div className="card mb-3 card-image-top" key={i} id="card-planets" >
-                                                <div className="row no-gutters">
+                                            <div className="card m-3" key={i} id="card-planets" >
+                                                <div className="row ">
                                                     <div className="col-md-4">
                                                         <img src={"http://localhost:3000/img/" + img} className="card-img" alt="..." />
                                                     </div>
                                                     <div className="col-md-8">
                                                         <div className="card-body">
                                                             <h5 className="card-title">{vehicle.name}</h5>
-                                                            <p className="card-text">Cargo apacity : {vehicle.cargo_capacity} </p>
-                                                            <p className="card-text">Consumcables : {vehicle.consumables} </p>
-                                                            <p className="card-text">Cost in credits : {vehicle.cost_in_credits} </p>
-                                                            <p className="card-text">Crew : {vehicle.crew} </p>
-                                                            <p className="card-text">Edited : {vehicle.edited} </p>
-                                                            <p className="card-text">Length : {vehicle.length} </p>
-                                                            <p className="card-text">Manufacturer : {vehicle.manufacturer} </p>
-                                                            <p className="card-text">Max atmosphering speed : {vehicle.max_atmosphering_speed} </p>
-                                                            <p className="card-text">Passengers : {vehicle.passengers} </p>
+                                                            <p className="card-text ml-5">
+                                                            Cargo apacity: {vehicle.cargo_capacity} <br/>
+                                                            Consumcables: {vehicle.consumables}  <br/> 
+                                                            Cost in credits: {vehicle.cost_in_credits} <br/>
+                                                            Class: {vehicle.vehicle_class}  <br/>
+                                                            Crew: {vehicle.crew} <br/>
+                                                            Length: {vehicle.length} <br/>
+                                                            Manufacturer: {vehicle.manufacturer}  <br/> 
+                                                            Max atmosphering speed: {vehicle.max_atmosphering_speed}<br/> 
+                                                            Passengers: {vehicle.passengers} <br/> </p>
                                                             <Link to={"/vehicles"} class="btn btn-primary">Back to Vehicles</Link>
                                                         </div>
                                                     </div>

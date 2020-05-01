@@ -26,6 +26,7 @@ const getState = ({ getStore, getAction, setStore }) => {
                     console.log(error)
                 })
             },
+
             getFilms: url => {
                 fetch(url, {
                     method: "GET",
@@ -42,6 +43,7 @@ const getState = ({ getStore, getAction, setStore }) => {
                     console.log(error)
                 })
             },
+
             getStarships: url => {
                 fetch(url, {
                     method: "GET",
@@ -58,6 +60,7 @@ const getState = ({ getStore, getAction, setStore }) => {
                     console.log(error)
                 })
             },
+
             getVehicles: url => {
                 fetch(url, {
                     method: "GET",
@@ -74,6 +77,7 @@ const getState = ({ getStore, getAction, setStore }) => {
                     console.log(error)
                 })
             },
+
             getSpecies: url => {
                 fetch(url, {
                     method: "GET",
@@ -90,6 +94,7 @@ const getState = ({ getStore, getAction, setStore }) => {
                     console.log(error)
                 })
             },
+            
             getPlanets: url => {
                 fetch(url, {
                     method: "GET",

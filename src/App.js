@@ -29,15 +29,15 @@ const App = props => {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/vehicles/:vehicle" component={VehiclesOne} />
-          <Route exact path="/films/:film" component={FilmsFilm} />
+          <Route exact path="/films/:film" component={FilmsFilm} /* RESPONSIVE */ />
           <Route exact path="/starships/:starship" component={Starshipsstarship} />
-          <Route exact path="/people/:character" component={PeopleCharacter} />
+          <Route exact path="/people/:character" component={PeopleCharacter} /* RESPONSIVE */ />
           <Route exact path="/planets/:planet" component={PlanetsPlanet} />
           <Route exact path="/species/:specie" component={SpeciesSpecie} />
           <Route exact path="/species" component={Species} />
           <Route exact path="/starships" component={Starships} />
-          <Route exact path="/people" component={People} />
-          <Route exact path="/films" component={Films} />
+          <Route exact path="/people" component={People} /* RESPONSIVE */  />
+          <Route exact path="/films" component={Films} /* RESPONSIVE */ />
           <Route exact path="/planets" component={Planets} />
           <Route exact path="/vehicles" component={Vehicles} />
           <Route render={() => <h1>Not Found</h1>} />

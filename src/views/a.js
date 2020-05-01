@@ -1,9 +1,3 @@
-// Lobot
-// Ackbar
-// Mon-Mothma
-// Arvel-Crynyd
-// Wicket-Systri-Warrick
-// Nien-Nunb
 // Qui-Gon-Jinn
 // Nute-Gunray
 // Finis-Valorum

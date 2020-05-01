@@ -10,27 +10,36 @@ const SpeciesSpecie = props => {
 
     return (
         <>
-            <div className="container">
+            <div className="container ">
                 <div className="row">
                     <div className="row">
                         {
-                            !!store.species &&
-                            store.species.results.length > 0 ?
+                            !!store.species  ?
                                 store.species.results.map((specie, i) => {
                                     if (JSON.stringify(specie.name) === JSON.stringify(nombreSpecie)) {
-
                                     const img = specie.name.split(" ").join("-").toLowerCase() + ".jpg";
                                     return (
-
-                                        <div className="card bg-dark text-white" key={i} >
-                                            <img src={"img/" + img} className="card-img" alt="..." />
-                                            <div className="row no-gutters">
-                                                &nbsp;<h5 className="card-title">{specie.name}</h5>
-                                                <div className="container ">
-                                                    <p><Link to={"/species"} className=" btn btn-danger">Back to species</Link></p>
+                                        <div className="card m-3" key={i} id="card-planets" >
+                                            <div className="row ">
+                                                <div className="col-md-4">
+                                                    <img src={"http://localhost:3000/img/"+img} className="card-img" alt="..." />
+                                                </div>
+                                                <div className="col-md-8">
+                                                    <div className="card-body" key={i}>
+                                                        <h5 className="card-title">{specie.name}</h5>
+                                                        <p className="card-text ml-5">Diameter: {specie.diameter}</p>
+                                                        <p className="card-text">Classification: {specie.classification}</p>
+                                                        <p className="card-text">Eye colors: {specie.eye_colors}</p>
+                                                        <p className="card-text">Language: {specie.language}</p>
+                                                        <p className="card-text">Skin color: {specie.skin_colors}</p>
+                                                        <Link to={"/species"}  class="btn btn-danger">Back to species </Link>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
+
+
+
                                     )}
                                 })
                                 : (

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Context } from "../components/store/appContext";
 import { Link } from "react-router-dom";
-
+/* RESPONSIVE */
 const Films = props => {
     const { store, actions } = useContext(Context);
 
@@ -17,19 +17,20 @@ const Films = props => {
                                     const img = film.title.split(" ").join("-").toLowerCase() + ".jpg";
                                     return (
 
-                                        <div className="card mt-3 p-1 mx-3 bg-dark" key={i} id="card-general">
-                                            <div className="">
-                                                <img src={"img/" + img} className="card-img-top" alt="..." />
+                                        <div className="card mt-3 p-1 mx-3 ml-5 bg-dark" key={i} id="card-general-film">
+                                            <div className="" >
+                                                <img src={"img/films/" + img} className="card-img-top" alt="..." />
                                                 <div className="card-body">
                                                     <h5 className="card-title">{film.title}</h5>
                                                     <p><Link to={"/films/" + film.title} className=" btn btn-danger">More...</Link></p>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
                                     )
                                 })
                                 : (
-                                    <div className="col-md-12 text-center">
+                                    <div className="col-md-12 col-xs-12 text-center">
                                         <div className="spinner-grow" role="status">
                                             <span className="sr-only">Loading...</span>
                                         </div>
@@ -41,8 +42,8 @@ const Films = props => {
             </div>
 
             <div className="row">
-                <div className="col-md-12 d-flex justify-content-between">
-                    {
+                <div className="col-md-12 col-xs-12 d-flex justify-content-between">
+                    {/* {
                         !!store.films &&
                         store.films.previous !== null ?
                             (
@@ -56,8 +57,8 @@ const Films = props => {
                                     Previous
                                 </button>
                             )
-                    }
-                    {
+                    } */}
+                    {/* {
                         !!store.films &&
                         store.films.next !== null ?
                             (
@@ -71,7 +72,7 @@ const Films = props => {
                                     Next
                                 </button>
                             )
-                    }
+                    } */}
 
                 </div>
             </div>
