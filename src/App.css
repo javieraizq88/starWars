@@ -1,7 +1,9 @@
-body{
-    background-color: black;
-    color: rgb(121, 119, 119);  
-}
+body {
+    background: url(https://images.wallpaperscraft.com/image/starry_sky_night_stars_115042_3840x2160.jpg) no-repeat center fixed !important;
+    min-height:100%;
+    background-size: cover;
+    background-color: black !important;
+  }
 
 .titulo{
     background-color: black;
@@ -48,6 +50,16 @@ body{
 #card-film{
     background-color: rgb(60, 91, 100);
     color: white;
+}
+
+
+#card-general-starships{
+    width: 440px;
+    height: 540px;
+}
+
+#card-general-starships img{
+    height: 400px;
 }
 
 /*
