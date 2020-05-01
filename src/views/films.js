@@ -17,12 +17,25 @@ const Films = props => {
                                     const img = film.title.split(" ").join("-").toLowerCase() + ".jpg";
                                     return (
 
-                                        <div className="card mt-3 p-1 mx-3 ml-5 bg-dark" key={i} id="card-general-film">
-                                            <div className="" >
-                                                <img src={"img/films/" + img} className="card-img-top" alt="..." />
+                                        <div className="card mt-3" id="card-film" key={i} /*id="card-general-film"*/ >
+                                            <div className="row no-gutters" >
+                                            <div className="col-md-3 col-xs-3">
+                                            <img src={"http://localhost:3000/img/films/" + img} className="card-img"  />
+                                            </div>
+                                            <div className="col-md-9 col-xs-9">
                                                 <div className="card-body">
-                                                    <h5 className="card-title">{film.title}</h5>
-                                                    <p><Link to={"/films/" + film.title} className=" btn btn-danger">More...</Link></p>
+                                                    <h4 className="card-header text-center">{film.title}</h4>
+                                                    <p className="card-text ml-3 text-justify">
+                                                        <br/>
+                                                    &nbsp; Episode number: {film.episode_id}<br /> 
+                                                    &nbsp; Release date: {film.release_date}<br />
+                                                    &nbsp; Director: {film.director}<br />
+                                                    &nbsp; Producer: {film.producer}<br />
+                                                    &nbsp; Opening crawl: {film.opening_crawl}<br />
+                                                    </p>
+
+                                                    {/* <p><Link to={"/films/" + film.title} className=" btn btn-danger">More...</Link></p> */}
+                                                    </div>
                                                     
                                                 </div>
                                             </div>

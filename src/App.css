@@ -45,6 +45,10 @@ body{
     margin: 0 auto;
 }
 
+#card-film{
+    background-color: rgb(60, 91, 100);
+    color: white;
+}
 
 /*
 #card-planets{
