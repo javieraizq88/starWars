@@ -28,9 +28,12 @@ const SpeciesSpecie = props => {
                                                     <div className="card-body" key={i}>
                                                         <h5 className="card-title">{specie.name}</h5>
                                                         <p className="card-text ml-5">Diameter: {specie.diameter}</p>
+                                                        <p className="card-text">average lifespan: {specie.average_lifespan}</p>
+                                                        <p className="card-text">Designation: {specie.designation}</p>
                                                         <p className="card-text">Classification: {specie.classification}</p>
-                                                        <p className="card-text">Eye colors: {specie.eye_colors}</p>
                                                         <p className="card-text">Language: {specie.language}</p>
+                                                        <p className="card-text">Eye colors: {specie.eye_colors}</p>
+                                                        <p className="card-text">hair colors: {specie.hair_colors}</p>
                                                         <p className="card-text">Skin color: {specie.skin_colors}</p>
                                                         <Link to={"/species"}  class="btn btn-danger">Back to species </Link>
                                                     </div>
