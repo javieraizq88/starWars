@@ -29,12 +29,13 @@ const Starshipsstarship = props => {
                                                 <div className="card-body">
                                                     <h5 className="card-title">{starship.name}</h5>
                                                     <p>
-                                                    &nbsp; Cargo capacity : {starship.cargo_capacity}<br />
-                                                    &nbsp; Consumables : {starship.consumables}<br />
-                                                    &nbsp; Cost in credits : {starship.cost_in_credits}<br />
-                                                    &nbsp; Crew : {starship.crew}<br />
-                                                    &nbsp; Model : {starship.model}<br />
-                                                    &nbsp; Passengers : {starship.passengers}<br />
+                                                    &nbsp; Cargo capacity: {starship.cargo_capacity}<br />
+                                                    &nbsp; Consumables: {starship.consumables}<br />
+                                                    &nbsp; Cost in credits: {starship.cost_in_credits}<br />
+                                                    &nbsp; Crew: {starship.crew}<br />
+                                                    &nbsp; Model: {starship.model}<br />
+                                                    &nbsp; Passengers: {starship.passengers}<br />
+                                                    &nbsp; Manufacturer: {starship.manufacturer}<br />
                                                     </p>
                                                     <Link to="/starships" className="btn btn-primary">Back to starships</Link>
                                                 </div>
