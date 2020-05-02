@@ -28,9 +28,13 @@ const PlanetsPlanet = props => {
                                                 <div className="col-md-8">
                                                     <div className="card-body">
                                                         <h5 className="card-title">{planet.name}</h5>
+                                                        <p className="card-text">Climate: {planet.climate}</p>
                                                         <p className="card-text">Diameter: {planet.diameter}</p>
+                                                        <p className="card-text">Gravity: {planet.gravity}</p>
                                                         <p className="card-text">Orbital Period: {planet.orbital_period}</p>
                                                         <p className="card-text">Population: {planet.population}</p>
+                                                        <p className="card-text">Rotation period: {planet.rotation_period}</p>
+                                                        <p className="card-text">Surface water: {planet.surface_water}</p>
                                                         <p className="card-text">Terrain: {planet.terrain}</p>
                                                         <Link to={"/planets"}  class="btn btn-primary">Back to Planets </Link>
                                                     </div>
