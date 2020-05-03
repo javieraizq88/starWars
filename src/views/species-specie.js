@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
 import { Context } from "../components/store/appContext";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const SpeciesSpecie = props => {
     const { store, actions } = useContext(Context);
     const { species } = store;
-    const nombreSpecie = props.match.params.specie; //llamo los paranmetros de people
-
+    const nombreSpecie = props.match.params.specie; //llamo los paranmetros de species
+const history = useHistory;
 
     return (
         <>
@@ -35,7 +35,7 @@ const SpeciesSpecie = props => {
                                                         <p className="card-text">Eye colors: {specie.eye_colors}</p>
                                                         <p className="card-text">hair colors: {specie.hair_colors}</p>
                                                         <p className="card-text">Skin color: {specie.skin_colors}</p>
-                                                        <Link to={"/species"}  class="btn btn-danger">Back to species </Link>
+                                                        <Link to={"/species"}  class="btn btn-primary">Back to species </Link>
                                                     </div>
                                                 </div>
                                             </div>
