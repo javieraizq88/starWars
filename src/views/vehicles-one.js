@@ -25,7 +25,7 @@ const VehiclesOne = props => {
                                             <div className="card m-3" key={i} id="card-planets" >
                                                 <div className="row ">
                                                     <div className="col-md-4">
-                                                        <img src={"http://localhost:3000/img/" + img} className="card-img" alt="..." />
+                                                        <img src={"/img/vehicles/" + img} className="card-img" alt="..." />
                                                     </div>
                                                     <div className="col-md-8">
                                                         <div className="card-body">

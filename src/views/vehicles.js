@@ -20,7 +20,7 @@ const Vehicles = props => {
                                     return (
                                         <div className="card mt-3 p-1 mx-3 bg-dark" key={i} id="card-general">
                                             <div className="">
-                                                <img src={"img/" + img} className="card-img-top" alt="..." />
+                                                <img src={"img/vehicles/" + img} className="card-img-top" alt="..." />
                                                 <div className="card-body">
                                                     <h5 className="card-title">{vehicle.name}</h5>
                                                     <p><Link to={"/vehicles/" + vehicle.name} className=" btn btn-danger">More...</Link></p>
