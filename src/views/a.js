@@ -57,7 +57,7 @@
 // Padmé-Amidala
 
 
-
+//       PLANETS  
 // Utapau
 // Mustafar
 // Kashyyyk
@@ -110,6 +110,8 @@
 // Tatooine
 // Jakku
 
+
+//     STARSHIPS
 // Bantha-II-cargo-skiff
 // TIE/IN-interceptor
 // Imperial-Speeder-Bike
