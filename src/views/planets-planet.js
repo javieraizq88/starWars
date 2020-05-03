@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 import { Context } from "../components/store/appContext";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const PlanetsPlanet = props => {
     const { store, actions } = useContext(Context);
     const { planets } = store;
     const nombrePlaneta = props.match.params.planet;
+    const history = useHistory();
 
     return (
         <>
@@ -36,7 +37,7 @@ const PlanetsPlanet = props => {
                                                         <p className="card-text">Rotation period: {planet.rotation_period}</p>
                                                         <p className="card-text">Surface water: {planet.surface_water}</p>
                                                         <p className="card-text">Terrain: {planet.terrain}</p>
-                                                        <Link to={"/planets"}  class="btn btn-primary">Back to Planets </Link>
+                                    <button className="btn btn-primary" onClick={() => history.goBack()}>Back to Planets</button>
                                                     </div>
                                                 </div>
                                             </div>
