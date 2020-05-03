@@ -5,12 +5,12 @@ const Navbar = props => {
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-light bg-light " id="navbar">
-            <a class="navbar-brand" href="#">Star Wars</a>
+            <a class="navbar-brand" href="/">Star Wars</a>
                 <div className="collapse navbar-collapse " id="navbarNav">
                     <ul className="navbar-nav mr-auto border-right" id="navbar-item">
-                        <li className="nav-item" >
-                            <Link className="nav-link border-left" to="/">Home<span class="sr-only">(current)</span></Link>
-                        </li>
+                        {/* <li className="nav-item" >
+                            <Link className="nav-link border-left " to="/">Home<span class="sr-only">(current)</span></Link>
+                        </li> */}
                         <li className="nav-item">
                             <Link className="nav-link border-left" to="/people">People</Link>
                         </li>
