@@ -18,7 +18,7 @@ const Species = props => {
                                     const img = specie.name.split(" ").join("-").toLowerCase() + ".jpg";
                                     return (
 
-                                        <div className="card mt-3 p-1 mx-3 bg-dark" key={i} id="card-general">
+                                        <div className="card mt-3 p-1 mx-3 bg-secondary text-white text-center" key={i} id="card-general">
                                             <div className="">
                                                 <img src={"img/species/" + img} className="card-img-top" alt="..." />
                                                 <div className="card-body">
@@ -30,7 +30,7 @@ const Species = props => {
                                     )
                                 })
                                 : (
-                                    <div className="col-md-12 text-center">
+                                    <div className="col-md-12 col-xs-12 text-center">
                                         <div className="spinner-grow" role="status">
                                             <span className="sr-only">Loading...</span>
                                         </div>
@@ -42,7 +42,7 @@ const Species = props => {
             </div>
 
             <div className="row">
-                <div className="col-md-12 d-flex justify-content-between">
+                <div className="col-md-12 col-xs-12 d-flex justify-content-between">
                     {
                         !!store.species &&
                         store.species.previous !== null ?
