@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Context } from "../components/store/appContext";
 import { Link } from "react-router-dom";
-
+/* RESPONSIVE */
 
 const Vehicles = props => {
     const { store, actions } = useContext(Context);
@@ -20,7 +20,7 @@ const Vehicles = props => {
                                     return (
                                         <div className="card mt-3 p-1 mx-3 bg-dark text-white mb-3" key={i} id="card-general">
                                             <div className="">
-                                                <img src={"img/vehicles/" + img} className="card-img-top" alt="..." />
+                                                <img src={"img/vehicles/" + img} className="card-img-top"  />
                                                 <div className="card-body">
                                                     <h5 className="card-title">{vehicle.name}</h5>
                                                     <p><Link to={"/vehicles/" + vehicle.name} className=" btn btn-danger">More...</Link></p>
@@ -30,7 +30,7 @@ const Vehicles = props => {
                                     )
                                 })
                                 : (
-                                    <div className="col-md-12 text-center">
+                                    <div className="col-md-12 col-xs-12 text-center">
                                         <div className="spinner-grow" role="status">
                                             <span className="sr-only">Loading...</span>
                                         </div>
@@ -42,7 +42,7 @@ const Vehicles = props => {
             </div>
 
             <div className="row">
-                <div className="col-md-12 d-flex justify-content-between">
+                <div className="col-md-12 col-xs-12 d-flex justify-content-between">
                     {
                         !!store.vehicles &&
                         store.vehicles.previous !== null ?

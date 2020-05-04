@@ -28,7 +28,7 @@ const App = props => {
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/vehicles/:vehicle" component={VehiclesOne} />
+          <Route exact path="/vehicles/:vehicle" component={VehiclesOne} /* RESPONSIVE */ />
           <Route exact path="/films/:film" component={FilmsFilm} /* RESPONSIVE */ />
           <Route exact path="/starships/:starship" component={Starshipsstarship}  /* RESPONSIVE */ />
           <Route exact path="/people/:character" component={PeopleCharacter} /* RESPONSIVE */ />
@@ -39,7 +39,7 @@ const App = props => {
           <Route exact path="/people" component={People} /* RESPONSIVE */  />
           <Route exact path="/films" component={Films} /* RESPONSIVE */ />
           <Route exact path="/planets" component={Planets} />
-          <Route exact path="/vehicles" component={Vehicles} />
+          <Route exact path="/vehicles" component={Vehicles} /* RESPONSIVE */ />
           <Route render={() => <h1>Not Found</h1>} />
         </Switch>
       </BrowserRouter>
