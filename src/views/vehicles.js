@@ -18,7 +18,7 @@ const Vehicles = props => {
                                 store.vehicles.results.map((vehicle, i) => {
                                     const img = vehicle.name.replace("/", "-").split(" ").join("-").toLowerCase() + ".jpg";
                                     return (
-                                        <div className="card mt-3 p-1 mx-3 bg-dark" key={i} id="card-general">
+                                        <div className="card mt-3 p-1 mx-3 bg-dark text-white mb-3" key={i} id="card-general">
                                             <div className="">
                                                 <img src={"img/vehicles/" + img} className="card-img-top" alt="..." />
                                                 <div className="card-body">

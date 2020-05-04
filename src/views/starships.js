@@ -27,7 +27,7 @@ const Starships = props => {
                                     )
                                 })
                                 : (
-                                    <div className="col-md-12 text-center">
+                                    <div className="col-md-12 col-xs-12 text-center">
                                         <div className="spinner-grow" role="status">
                                             <span className="sr-only">Loading...</span>
                                         </div>
@@ -39,7 +39,7 @@ const Starships = props => {
             </div>
 
             <div className="row">
-                <div className="col-md-12 d-flex justify-content-between">
+                <div className="col-md-12 col-xs-12 d-flex justify-content-between">
                     {
                         !!store.starships &&
                         store.starships.previous !== null ?

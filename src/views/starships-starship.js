@@ -1,11 +1,14 @@
 import React, { useContext } from "react";
 import { Context } from "../components/store/appContext";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+/* RESPONSIVE */
 
 const Starshipsstarship = props => {
     const { store, actions } = useContext(Context);
     const { starships } = store;
     const nombreStarship = props.match.params.starship; //llamo los paranmetros de people
+    const history = useHistory();
+
 
     return (
         <>
@@ -20,15 +23,15 @@ const Starshipsstarship = props => {
 
                                     const img = starship.name.split(" ").join("-").toLowerCase() + ".jpg";
                                     return (
-                                        <div className="card mt-3" key={i} id="card-individual">
+                                        <div className="card mt-3" key={i} >
                                         <div className="row no-gutters">
-                                            <div className="col-md-4">
-                                                <img src={"http://localhost:3000/img/" + img} id= "omagen-individual"/>
+                                            <div className="col-md-4 col-xs-4">
+                                                <img src={"http://localhost:3000/img/starships/" + img} className="card-img-top"  />
                                             </div>
-                                            <div className="col-md-8">
+                                            <div className="col-md-5 col-xs-5 ">
                                                 <div className="card-body">
-                                                    <h5 className="card-title">{starship.name}</h5>
-                                                    <p>
+                                                    <h4 className="card-title">{starship.name}</h4>
+                                                    <p className="card-text ml-3">
                                                     &nbsp; Cargo capacity: {starship.cargo_capacity}<br />
                                                     &nbsp; Consumables: {starship.consumables}<br />
                                                     &nbsp; Cost in credits: {starship.cost_in_credits}<br />
@@ -37,7 +40,7 @@ const Starshipsstarship = props => {
                                                     &nbsp; Passengers: {starship.passengers}<br />
                                                     &nbsp; Manufacturer: {starship.manufacturer}<br />
                                                     </p>
-                                                    <Link to="/starships" className="btn btn-primary">Back to starships</Link>
+                                                    <button className="btn btn-primary" onClick={() => history.goBack()}>Back to starships</button>
                                                 </div>
                                             </div>
                                         </div>
