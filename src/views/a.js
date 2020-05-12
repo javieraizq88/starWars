@@ -1,7 +1,5 @@
-// Qui-Gon-Jinn
-// Nute-Gunray
-// Finis-Valorum
-// Jar-Jar-Binks
+// CHARACTERS
+
 // Roos-Tarpals
 // Rugor-Nass
 // Ric-Olié
@@ -55,7 +53,52 @@
 // BB8
 // Captain-Phasma
 // Padmé-Amidala
+// Wilhuff-Tarkin
+// Chewbacca
+// Han-Solo
+// Greedo
+// Jabba-Desilijic-Tiure
+// Wedge-Antilles
+// Jek-Tono-Porkins
+// Palpatine
+// Yoda
+// IG-88
+// Bossk
+// Lando-Calrissian
+// Qui-Gon-Jinn
+// Nute-Gunray
+// Finis-Valorum
+// Padmé-Amidala
+// Jar-Jar-Binks
 
+// STARSHIPS
+// 
+// Slave-1
+// Imperial-shuttle
+// EF76 Nebulon-B escort frigate
+// Droid control ship
+// Naboo fighter
+// Naboo Royal Starship
+// Calamari-Cruiser
+// A-wing
+// B-wing
+// Republic Cruiser
+// Scimitar
+// J-type diplomatic barge
+// AA-9 Coruscant freighter
+// Jedi starfighter
+// H-type Nubian yacht
+// Republic Assault ship
+// Solar Sailer
+// Trade Federation cruiser
+// Theta-class T-2c shuttle
+// Republic attack cruiser
+// Naboo star skiff
+// Jedi Interceptor
+// arc-170
+// Banking clan frigte
+// Belbullab-22 starfighter
+// V-wing
 
 //       PLANETS  
 // Polis-Massa
