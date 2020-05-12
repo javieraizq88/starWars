@@ -129,6 +129,34 @@
 // Corporate Alliance tank droid
 // Droid gunship
 
+//         SPECIES
+// Neimodian
+// Gungan
+// Toydarian
+// Dug
+// Twi'lek
+// Aleena
+// Vulptereen
+// Xexto
+// Toong
+// Cerean
+// Nautolan
+// Zabrak
+// Tholothian
+// Iktotchi
+// Quermian
+// Kel Dor
+// Chagrian
+// Geonosian
+// Mirialan
+// Clawdite
+// Besalisk
+// Kaminoan
+// Skakoan
+// Muun
+// Togruta
+// Kaleesh
+// Pau'an
 
 //       PLANETS  
 // Polis-Massa
