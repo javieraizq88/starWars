@@ -58,9 +58,6 @@
 
 
 //       PLANETS  
-// 
-// 
-// 
 // Polis-Massa
 // Mygeeto
 // Felucia
@@ -112,9 +109,6 @@
 
 
 //     STARSHIPS
-// Bantha-II-cargo-skiff
-// TIE/IN-interceptor
-// Imperial-Speeder-Bike
 // Vulture-Droid
 // Multi-Troop-Transport
 // Armored-Assault-Tank
