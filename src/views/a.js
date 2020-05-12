@@ -58,9 +58,9 @@
 
 
 //       PLANETS  
-// Utapau
-// Mustafar
-// Kashyyyk
+// 
+// 
+// 
 // Polis-Massa
 // Mygeeto
 // Felucia
