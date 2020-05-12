@@ -172,7 +172,6 @@
 // Dantooine
 // Bestine-IV
 // Ord-Mantell
-// unknown
 // Trandosha
 // Socorro
 // Mon-Cala
@@ -205,8 +204,7 @@
 // Shili
 // Kalee
 // Umbara
-// Tatooine
-// Jakku
+
 
 
 //     STARSHIPS
