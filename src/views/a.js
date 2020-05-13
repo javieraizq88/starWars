@@ -80,10 +80,8 @@
 // Naboo fighter
 // Naboo Royal Starship
 // Calamari-Cruiser
-// A-wing
 // B-wing
 // Republic Cruiser
-// Scimitar
 // J-type diplomatic barge
 // AA-9 Coruscant freighter
 // Jedi starfighter
@@ -159,9 +157,6 @@
 // Pau'an
 
 //       PLANETS  
-// 
-// 
-// 
 // Cato-Neimoidia
 // Saleucami
 // Stewjon
