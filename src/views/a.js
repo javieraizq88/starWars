@@ -159,9 +159,9 @@
 // Pau'an
 
 //       PLANETS  
-// Polis-Massa
-// Mygeeto
-// Felucia
+// 
+// 
+// 
 // Cato-Neimoidia
 // Saleucami
 // Stewjon
