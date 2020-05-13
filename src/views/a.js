@@ -208,8 +208,6 @@
 
 
 //     STARSHIPS
-// Vulture-Droid
-// Multi-Troop-Transport
 // Armored-Assault-Tank
 // Single-Trooper-Aerial-Platform
 // C-9979-landing-craft
