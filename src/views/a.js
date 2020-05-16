@@ -1,6 +1,5 @@
-// CHARACTERS
-
-// Roos-Tarpals
+//         CHARACTERS
+// 
 // Rugor-Nass
 // Ric-Olié
 // Watto
