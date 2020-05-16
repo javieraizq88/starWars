@@ -1,6 +1,6 @@
 //         CHARACTERS
 // 
-// Rugor-Nass
+// 
 // Ric-Olié
 // Watto
 // Sebulba
