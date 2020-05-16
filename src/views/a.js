@@ -1,8 +1,6 @@
 //         CHARACTERS
-// 
-// 
 // Ric-Olié
-// Watto
+// 
 // Sebulba
 // Quarsh-Panaka
 // Shmi-Skywalker
