@@ -1,6 +1,6 @@
 //         CHARACTERS
 // 
-// Quarsh-Panaka
+// 
 // Shmi-Skywalker
 // Darth-Maul
 // Bib-Fortuna
