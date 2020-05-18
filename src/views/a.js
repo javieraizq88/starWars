@@ -1,6 +1,6 @@
 //         CHARACTERS
-// Shmi-Skywalker
-// Darth-Maul
+// 
+// 
 // Bib-Fortuna
 // Ayla-Secura
 // Dud-Bolt
