@@ -1,7 +1,5 @@
 //         CHARACTERS
 // 
-// 
-// Bib-Fortuna
 // Ayla-Secura
 // Dud-Bolt
 // Gasgano
