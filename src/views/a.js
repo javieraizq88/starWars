@@ -1,6 +1,4 @@
 //         CHARACTERS
-// 
-// 
 // Shmi-Skywalker
 // Darth-Maul
 // Bib-Fortuna
