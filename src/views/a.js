@@ -1,6 +1,6 @@
 //         CHARACTERS
 // 
-// Dud-Bolt
+// 
 // Gasgano
 // Ben-Quadinaros
 // Mace-Windu
