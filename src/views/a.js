@@ -1,6 +1,5 @@
 //         CHARACTERS
 // 
-// Ayla-Secura
 // Dud-Bolt
 // Gasgano
 // Ben-Quadinaros
