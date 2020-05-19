@@ -1,7 +1,5 @@
 //         CHARACTERS
 // 
-// 
-// Gasgano
 // Ben-Quadinaros
 // Mace-Windu
 // Ki-Adi-Mundi
