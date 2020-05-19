@@ -1,7 +1,5 @@
 //         CHARACTERS
 // 
-// 
-// Mace-Windu
 // Ki-Adi-Mundi
 // Kit-Fisto
 // Eeth-Koth
