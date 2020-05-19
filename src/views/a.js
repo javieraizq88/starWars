@@ -1,6 +1,6 @@
 //         CHARACTERS
 // 
-// Ben-Quadinaros
+// 
 // Mace-Windu
 // Ki-Adi-Mundi
 // Kit-Fisto
