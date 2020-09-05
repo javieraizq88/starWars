@@ -17,7 +17,7 @@ const Films = props => {
                                     const img = film.title.split(" ").join("-").toLowerCase() + ".jpg";
                                     return (
 
-                                        <div className="card mt-3" id="card-film" key={i} /*id="card-general-film"*/ >
+                                        <div className="card mt-3" id="card-film" key={i} >
                                             <div className="row no-gutters" >
                                             <div className="col-md-3 col-xs-3">
                                             <img src={"http://localhost:3000/img/films/" + img} className="card-img"  />

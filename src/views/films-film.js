@@ -24,7 +24,7 @@ const FilmsFilm = props => {
                                             <div className="card mt-3 text-white bg-secondary " key={i}>
                                                 <div className="row no-gutters">
                                                     <div className="col-md-3 col-xs-3">
-                                                        <img src={"http://localhost:3000/img/films/" + img} className="card-img"  />
+                                                        <img src={"http://localhost:3000/img/films/" + img} className="card-img" />
                                                     </div>
                                                     <div className="col-md-9 col-xs-9">
                                                         <div className="card-body">
@@ -35,7 +35,12 @@ const FilmsFilm = props => {
                                                             &nbsp; Director : {film.director}<br />
                                                             &nbsp; Opening crawl : {film.opening_crawl}<br />
                                                             </p>
-                                                            <button className="btn btn-primary" onClick={() => history.goBack()}>Back to Films</button>
+                                                            <button
+                                                                className="btn btn-primary"
+                                                                onClick={() => history.goBack()}
+                                                            >
+                                                                Back to Films
+                                                                </button>
                                                         </div>
                                                     </div>
                                                 </div>

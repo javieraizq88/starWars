@@ -36,7 +36,12 @@ const PeopleCharacter = props => {
                                                             &nbsp; Height : {character.height}<br />
                                                             &nbsp; Birth year : {character.birth_year}<br />
                                                             </p>
-                                                            <button className="btn btn-primary" onClick={() => history.goBack()}>Back to People</button>
+                                                            <button
+                                                                className="btn btn-primary"
+                                                                onClick={() => history.goBack()}
+                                                            >
+                                                                Back to People
+                                                                </button>
                                                         </div>
                                                     </div>
                                                 </div>
