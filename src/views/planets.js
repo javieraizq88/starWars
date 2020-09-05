@@ -16,12 +16,27 @@ const Planets = props => {
                                 store.planets.results.map((planet, i) => {
                                     const img = planet.name.split(" ").join("-").toLowerCase() + ".jpg";
                                     return (
-                                        <div className="card mt-3 p-1 mx-3 bg-dark" key={i} id="card-general">
+                                        <div
+                                            key={i}
+                                            className="card mt-3 p-1 mx-3 bg-dark"
+                                            id="card-general"
+                                        >
                                             <div className="">
-                                                <img src={"img/planets/" + img} className="card-img-top" alt="..." />
+                                                <img
+                                                    src={"img/planets/" + img}
+                                                    className="card-img-top"
+                                                    alt="Planet img"
+                                                />
                                                 <div className="card-body">
                                                     <h5 className="card-title">{planet.name}</h5>
-                                                    <p><Link to={"/planets/" + planet.name} className=" btn btn-danger">More...</Link></p>
+                                                    <p>
+                                                        <Link
+                                                            to={"/planets/" + planet.name}
+                                                            className=" btn btn-danger"
+                                                        >
+                                                            More...
+                                                            </Link>
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -43,13 +58,13 @@ const Planets = props => {
                 <div className="col-md-12 d-flex justify-content-between">
                     {
                         !!store.planets &&
-                        store.planets.previous !== null ?
+                            store.planets.previous !== null ?
                             (
                                 <button className="btn btn-primary btn-md"
                                     onClick={() => actions.getPlanets(store.planets.previous)}>
                                     Previous
                                 </button>
-                            ) :( 
+                            ) : (
                                 <button className="btn btn-primary btn-md disabled"
                                     onClick={() => actions.getPlanets(store.planets.previous)}>
                                     Previous
@@ -58,13 +73,13 @@ const Planets = props => {
                     }
                     {
                         !!store.planets &&
-                        store.planets.next !== null ?
+                            store.planets.next !== null ?
                             (
                                 <button className="btn btn-primary btn-md"
                                     onClick={() => actions.getPlanets(store.planets.next)}>
                                     Next
                                 </button>
-                            ) :( 
+                            ) : (
                                 <button className="btn btn-primary btn-md disabled"
                                     onClick={() => actions.getPlanets(store.planets.next)}>
                                     Next

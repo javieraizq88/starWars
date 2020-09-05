@@ -27,7 +27,7 @@ const FilmsFilm = props => {
                                                         <img
                                                             src={"http://localhost:3000/img/films/" + img}
                                                             className="card-img"
-                                                            alt=""
+                                                            alt="Film Img"
                                                         />
                                                     </div>
                                                     <div className="col-md-9 col-xs-9">
