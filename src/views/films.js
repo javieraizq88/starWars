@@ -1,9 +1,8 @@
 import React, { useContext } from "react";
 import { Context } from "../components/store/appContext";
-import { Link } from "react-router-dom";
 /* RESPONSIVE */
 const Films = props => {
-    const { store, actions } = useContext(Context);
+    const { store } = useContext(Context);
 
     return (
         <>

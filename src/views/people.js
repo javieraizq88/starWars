@@ -4,7 +4,7 @@ import { Context } from "../components/store/appContext";
 /* RESPONSIVE */
 const People = props => {
     const { store, actions } = useContext(Context);
-    const { people } = store;
+    // const { people } = store;
     console.log(store.people);
 
     return (
