@@ -3,7 +3,7 @@ import { Context } from "../components/store/appContext";
 import { useHistory } from "react-router-dom";
 /* RESPONSIVE */
 const FilmsFilm = props => {
-    const { store, actions } = useContext(Context);
+    const { store } = useContext(Context);
     const { films } = store; //llamo a la info de films q esta en store en el AppContext.js
     const nombrefilm = props.match.params.film; //llamo los paranmetros de films
     const history = useHistory();
@@ -24,7 +24,11 @@ const FilmsFilm = props => {
                                             <div className="card mt-3 text-white bg-secondary " key={i}>
                                                 <div className="row no-gutters">
                                                     <div className="col-md-3 col-xs-3">
-                                                        <img src={"http://localhost:3000/img/films/" + img} className="card-img" />
+                                                        <img
+                                                            src={"http://localhost:3000/img/films/" + img}
+                                                            className="card-img"
+                                                            alt=""
+                                                        />
                                                     </div>
                                                     <div className="col-md-9 col-xs-9">
                                                         <div className="card-body">
