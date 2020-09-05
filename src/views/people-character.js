@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 /* RESPONSIVE */
 const PeopleCharacter = props => {
     const { store } = useContext(Context);
-    const { people } = store;
+    // const { people } = store;
     const nombreCharacter = props.match.params.character; //llamo los paranmetros de people
     const history = useHistory();
 

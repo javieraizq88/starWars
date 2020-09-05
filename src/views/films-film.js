@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 /* RESPONSIVE */
 const FilmsFilm = props => {
     const { store } = useContext(Context);
-    const { films } = store; //llamo a la info de films q esta en store en el AppContext.js
+    //const { films } = store; //llamo a la info de films q esta en store en el AppContext.js
     const nombrefilm = props.match.params.film; //llamo los paranmetros de films
     const history = useHistory();
 
