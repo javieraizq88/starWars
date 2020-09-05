@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Vehicles = props => {
     const { store, actions } = useContext(Context);
-    const { vehicles } = store;
+    // const { vehicles } = store;
 
 
     return (
@@ -20,7 +20,10 @@ const Vehicles = props => {
                                     return (
                                         <div className="card mt-3 p-1 mx-3 bg-dark text-white mb-3" key={i} id="card-general">
                                             <div className="">
-                                                <img src={"img/vehicles/" + img} className="card-img-top"  />
+                                                <img 
+                                                src={"img/vehicles/" + img} 
+                                                className="card-img-top"  
+                                                alt ="vehicles img" />
                                                 <div className="card-body">
                                                     <h5 className="card-title">{vehicle.name}</h5>
                                                     <p><Link to={"/vehicles/" + vehicle.name} className=" btn btn-danger">More...</Link></p>

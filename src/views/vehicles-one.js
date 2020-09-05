@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import { Context } from "../components/store/appContext";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 /* RESPONSIVE */
 
 const VehiclesOne = props => {
-    const { store, actions } = useContext(Context);
-    const { vehicles } = store;
+    const { store } = useContext(Context);
+    // const { vehicles } = store;
     const nombreVehiculo = props.match.params.vehicle;
     const history = useHistory();
 
@@ -26,7 +26,7 @@ const VehiclesOne = props => {
                                             <div className="card m-3" key={i} >
                                                 <div className="row no-gutters ">
                                                     <div className="col-md-4 col-xs-4">
-                                                        <img src={"/img/vehicles/" + img} className="card-img-top" alt="..." />
+                                                        <img src={"/img/vehicles/" + img} className="card-img-top" alt="vehicle img" />
                                                     </div>
                                                     <div className="col-md-5 col-xs-5 ">
                                                         <div className="card-body">

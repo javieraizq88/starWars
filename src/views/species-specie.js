@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { Context } from "../components/store/appContext";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 /* RESPONSIVE */
 const SpeciesSpecie = props => {
-    const { store, actions } = useContext(Context);
-    const { species } = store;
+    const { store } = useContext(Context);
+    // const { species } = store;
     const nombreSpecie = props.match.params.specie; //llamo los paranmetros de species
     const history = useHistory();
 
@@ -22,7 +22,7 @@ const SpeciesSpecie = props => {
                                             <div className="card mt-3" key={i} id="card-film" >
                                                 <div className="row no-gutters">
                                                     <div className="col-md-3 col-xs-3">
-                                                        <img src={"http://localhost:3000/img/species/" + img} className="card-img" alt="..." />
+                                                        <img src={"http://localhost:3000/img/species/" + img} className="card-img" alt="Specie img" />
                                                     </div>
                                                     <div className="col-md-9 col-xs-9">
                                                         <div className="card-body" >

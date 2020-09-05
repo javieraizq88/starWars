@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Starships = props => {
     const { store, actions } = useContext(Context);
-    const { starships } = store;
+    // const { starships } = store;
 
     return (
         <>
@@ -21,7 +21,7 @@ const Starships = props => {
                                             <div className="card-header">
                                                 <h3 className="card-title text-center text-white">{starship.name}</h3>
                                             </div>
-                                            <img src={"img/starships/" + img} className="card-img"  alt="..." />
+                                            <img src={"img/starships/" + img} className="card-img"  alt="Starship img" />
                                                 <p><Link to={"/starships/" + starship.name} className=" mt-2 btn btn-danger">More...</Link></p>
                                     </div>
                                     )

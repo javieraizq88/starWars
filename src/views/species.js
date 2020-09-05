@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Species = props => {
     const { store, actions } = useContext(Context);
-    const { species } = store;
+    // const { species } = store;
 
     return (
         <>
@@ -20,7 +20,7 @@ const Species = props => {
 
                                         <div className="card mt-3 p-1 mx-3 bg-secondary text-white text-center" key={i} id="card-general">
                                             <div className="">
-                                                <img src={"img/species/" + img} className="card-img-top" alt="..." />
+                                                <img src={"img/species/" + img} className="card-img-top" alt="Specie img" />
                                                 <div className="card-body">
                                                     <h5 className="card-title">{specie.name}</h5>
                                                     <p><Link to={"/species/" + specie.name} className=" btn btn-danger">More...</Link></p>

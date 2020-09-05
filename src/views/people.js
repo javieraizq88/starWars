@@ -20,7 +20,7 @@ const People = props => {
                                     return (
                                         <div className="card mt-3 p-1 mx-3 bg-dark" key={i} id="card-general">
                                             <div className="" id="card-general">
-                                                <img src={"img/people/" + img} className="card-img-top" alt="..." />
+                                                <img src={"img/people/" + img} className="card-img-top" alt="Character img" />
                                                 <div className="card-body">
                                                     <h5 className="card-title">{character.name}</h5>
                                                     <p><Link to={"/people/" + character.name} className=" btn btn-danger">More...</Link></p>
