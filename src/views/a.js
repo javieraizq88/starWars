@@ -1,7 +1,6 @@
 //         CHARACTERS
 // 
 // Ki-Adi-Mundi
-// Kit-Fisto
 // Eeth-Koth
 // Adi-Gallia
 // Saesee-Tiin
