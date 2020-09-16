@@ -1,6 +1,5 @@
 //         CHARACTERS
 // 
-// Ki-Adi-Mundi
 // Eeth-Koth
 // Adi-Gallia
 // Saesee-Tiin
