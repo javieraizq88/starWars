@@ -11,9 +11,6 @@ const Home = props => {
     return ( 
         <>
             <div id="container-home-starwars" >
-
-
-
                 <div className="card-group" >
                     <img className="card-img col-md-2 col-xs-3"
                         alt=""

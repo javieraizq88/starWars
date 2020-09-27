@@ -19,7 +19,10 @@ const Starships = props => {
                                     return (
                                         <div className="card mt-3 p-2 mx-3 ml-5 mr-5 mb-3 bg-dark" key={i} id="card-general-starships">
                                             <div className="card-header">
-                                                <h3 className="card-title text-center text-white">{starship.name}</h3>
+                                                <h3 
+                                                className="card-title text-center text-white"
+                                                >{starship.name}
+                                                </h3>
                                             </div>
                                             <img src={"img/starships/" + img} className="card-img"  alt="Starship img" />
                                                 <p><Link to={"/starships/" + starship.name} className=" mt-2 btn btn-danger">More...</Link></p>

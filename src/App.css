@@ -11,6 +11,12 @@ body {
     text-align: center;
 }
 
+/* home  */
+
+#container-home-starwars{
+    width: 99%;
+}
+
 #card-individual img {
     width: 170px;
     height: 280px;
@@ -37,8 +43,8 @@ body {
 
 #card-general-film{
     width: 280px;
- height: 420px;
- background: rgb(2, 0, 0);
+    height: 420px;
+    background: rgb(2, 0, 0);
 }
 
 #card-general-film img{
